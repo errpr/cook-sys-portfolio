@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Roboto');
+
 body {
+  position: absolute;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  border: 0;
+  font-family: "Roboto", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('./pawel-czerwinski-1311901-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
