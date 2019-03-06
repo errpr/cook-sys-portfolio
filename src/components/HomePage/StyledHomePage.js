@@ -1,5 +1,6 @@
 import styled from 'styled-components'
+import StyledPage from '../Page/StyledPage'
 
-export default styled.div`
+export default styled(StyledPage)`
   background-color: rebeccapurple;
 `
