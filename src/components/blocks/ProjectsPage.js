@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Page from './Page'
 import PageTitle from '../elements/PageTitle'
 import PageBody from '../elements/PageBody'
-import PageSection from './PageSection'
+import ProjectSection from './ProjectSection'
 
 const StyledProjectsPage = styled(Page)``
 
@@ -12,36 +12,64 @@ export default function ProjectsPage (props) {
     <StyledProjectsPage>
       <PageTitle>My Projects</PageTitle>
       <PageBody>
-        <PageSection title='Smart Share'>
-          This application leveraged a cutting edge paradigm of object oriented
-          C# for maximizing file sharing synergies.
-          <br />
-          Features:
-          <ul>
-            <li>Uploading files</li>
-            <li>Downloading files</li>
-          </ul>
-        </PageSection>
-        <PageSection title='Social Media'>
-          A twitter-like social media backend & API with followers and a feed.
-          <br />
-          Features:
-          <ul>
-            <li>Tweets</li>
-            <li>Follows</li>
-            <li>Likes</li>
-            <li>Feed</li>
-          </ul>
-        </PageSection>
-        <PageSection title='<dev-duel>'>
-          This project gamifies the GitHub API.
-          <br />
-          Features:
-          <ul>
-            <li>See information from GitHub</li>
-            <li>Compare two developers GitHub stats</li>
-          </ul>
-        </PageSection>
+        <ProjectSection
+          title='Smart Share'
+          description='A command line client for uploading and downloading files, and
+            checking the status of stored files. Also a server for facilitating
+            the client and file storage.'
+          features={[
+            'Client & Server',
+            'Uploading files',
+            'Downloading files',
+            'Per file time and number limits on downloads'
+          ]}
+          stack={[
+            'C#',
+            '.NET Core',
+            'PostgreSQL',
+            'EntityFrameworkCore',
+            'Npgsql'
+          ]}
+          link='https://github.com/errpr/cook-sys-smart-share'
+        />
+        <ProjectSection
+          title='Social Media'
+          description='A twitter-like social media backend & API with followers and a feed.'
+          features={[
+            'Send and view tweets',
+            'Follow a user',
+            'Like a tweet',
+            'View a users tweet feed'
+          ]}
+          stack={[
+            'C#',
+            '.NET Core',
+            'ASP.NET Core',
+            'PostgreSQL',
+            'EntityFrameworkCore',
+            'Npgsql'
+          ]}
+          link='https://github.com/errpr/cook-sys-social-media'
+        />
+        <ProjectSection
+          title='<dev-duel>'
+          description="View and compare developer's GitHub profiles and stats with this project."
+          features={[
+            'View a developer',
+            'Battle two profiles and see the winner',
+            'Customized titles & stats',
+            'Asynchronous fetching and injection of data'
+          ]}
+          stack={[
+            'JavaScript',
+            'NodeJS',
+            'Express',
+            'Axios',
+            'Browser API',
+            'GitHub API'
+          ]}
+          link='https://github.com/errpr/cook-sys-dev-duel'
+        />
       </PageBody>
     </StyledProjectsPage>
   )
