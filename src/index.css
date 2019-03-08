@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Roboto');
 
+html {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Roboto", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./jarrod-winkler-1348990-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
 body {
   position: absolute;
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Roboto", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   width: 100vw;
   min-height: 100vh;
-  background-image: url('./jarrod-winkler-1348990-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.9));
+  overflow-x: hidden;
 }
 
 a {

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { NavLink as RouterNavLink } from 'react-router-dom'
 
-const NavLink = styled(RouterNavLink)`
+const StyledNavLink = styled(RouterNavLink)`
   &:hover {
     text-shadow: 2px 2px 2px ${props => props.shadowColor};
   }
@@ -10,8 +10,8 @@ const NavLink = styled(RouterNavLink)`
   }
 `
 
-NavLink.defaultProps = {
+StyledNavLink.defaultProps = {
   shadowColor: 'magenta'
 }
 
-export default NavLink
+export default StyledNavLink

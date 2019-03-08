@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Nav from './Nav'
-import HomePage from './HomePage'
-import AboutPage from './AboutPage'
-import ProjectsPage from './ProjectsPage'
-import ResumePage from './ResumePage'
+import Nav from '../components/blocks/Nav'
+import HomePage from '../components/blocks/HomePage'
+import AboutPage from '../components/blocks/AboutPage'
+import ProjectsPage from '../components/blocks/ProjectsPage'
+import ResumePage from '../components/blocks/ResumePage'
 import styled from 'styled-components'
 
 const StyledApp = styled.div`
@@ -12,9 +12,10 @@ const StyledApp = styled.div`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   color: white;
-  text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
+  text-shadow: 1px 1px 9px rgb(0, 0, 0);
+  height: 95vh;
 `
 
 export default function App (props) {

@@ -1,6 +1,6 @@
 import React from 'react'
-import StyledNavLink from './NavLink'
-import BigName from './BigName'
+import NavLink from '../elements/NavLink'
+import BigName from '../elements/BigName'
 import styled from 'styled-components'
 
 const StyledNav = styled.nav`
@@ -20,18 +20,18 @@ const StyledNav = styled.nav`
 function Nav (props) {
   return (
     <StyledNav>
-      <StyledNavLink exact to='/'>
+      <NavLink exact to='/'>
         <BigName />
-      </StyledNavLink>
-      <StyledNavLink shadowColor='crimson' to='/about'>
+      </NavLink>
+      <NavLink shadowColor='crimson' to='/about'>
         About Me
-      </StyledNavLink>
-      <StyledNavLink shadowColor='lawngreen' to='/projects'>
+      </NavLink>
+      <NavLink shadowColor='lawngreen' to='/projects'>
         My Projects
-      </StyledNavLink>
-      <StyledNavLink shadowColor='cyan' to='/resume'>
+      </NavLink>
+      <NavLink shadowColor='cyan' to='/resume'>
         My Resume
-      </StyledNavLink>
+      </NavLink>
     </StyledNav>
   )
 }
