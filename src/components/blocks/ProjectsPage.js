@@ -23,8 +23,7 @@ export default function ProjectsPage (props) {
           </ul>
         </PageSection>
         <PageSection title='Social Media'>
-          In this totally original idea (Do Not Steal) we have a twitter-like
-          social media site with followers and a feed.
+          A twitter-like social media backend & API with followers and a feed.
           <br />
           Features:
           <ul>
@@ -35,13 +34,12 @@ export default function ProjectsPage (props) {
           </ul>
         </PageSection>
         <PageSection title='<dev-duel>'>
-          This project gamifies the GitHub API. Comparing two devs has never
-          been so much fun!
+          This project gamifies the GitHub API.
           <br />
           Features:
           <ul>
-            <li>Devs</li>
-            <li>Duels</li>
+            <li>See information from GitHub</li>
+            <li>Compare two developers GitHub stats</li>
           </ul>
         </PageSection>
       </PageBody>

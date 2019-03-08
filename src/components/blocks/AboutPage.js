@@ -17,8 +17,8 @@ export default function AboutPage (props) {
           I was born, I lived a while, then I wrote this website.
         </PageSection>
         <PageSection title='My Interests'>
-          I like to read (novels mostly), rage at the news, drink wine, and
-          watch eSports.
+          I like to read (scifi novels mostly), rage at the news, drink wine,
+          and watch eSports.
         </PageSection>
         <PageSection title='Tech & Programming'>
           My interest in technology started at an early age, my brother showed
